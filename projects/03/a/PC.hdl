@@ -16,5 +16,9 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Inc16(in=output, out=incOut);
+    Mux16(a=output, b=incOut, sel=inc, out=incMuxOut);
+    Mux16(a=incMuxOut, b=in, sel=load, out=loadOut);
+    Mux16(a=loadOut, b=false, sel=reset, out=resetOut);
+    Register(in=resetOut, load=true, out=out, out=output);
 }
