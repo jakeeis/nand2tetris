@@ -11,3 +11,6 @@ In this week's project I started with a Nand gate and was able to create an arra
 
 ## Week 2
 This week, I created more advanced chips based on the chips created last week. These chips included the half-adder, full-adder, 16-bit adder, 16-bit incrementer and arithmetic logic unit (ALU). This was very interesting as we now have chip capable of 16-bit binary addition based on what boils down to just Nand gates. Also the ALU, which is capable of more complicated mathematical functions, will form a core part of the Hack computer's CPU.
+
+## Week 3
+This week focused on creating the memory units that will be used by the Hack computer. While the lectures did explain how flip flops could be created from Nand gates, the data flip flop (DFF) was used as a primitive building block in this project. A DFF was used to create a bit sized memory unit, which was in turn used to build a byte sized register and larger and larger memory units. This culminated with a 16K byte sized block of RAM. A program counter with reset, increment and set functionality was also created.
